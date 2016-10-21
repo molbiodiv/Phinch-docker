@@ -46,6 +46,7 @@ RUN chown -R www-data:www-data /var/www/html/biomFiles
 ADD php.ini /etc/php/7.0/apache2/php.ini
 # Add custom apache conf
 ADD apache2.conf /etc/apache2/apache2.conf
+ADD .htaccess /var/www/html/.htaccess
 
 # Create and fill database
 ADD create_mysql_db.sql /tmp/create_mysql_db.sql
